@@ -6,7 +6,6 @@ before_install:
   - export PYTHONPATH=$PYTHONPATH:$PWD
 
 before_script:
-  - pip install -r requirements.txt
   - pwd
   - ls -la purbeurre
 
