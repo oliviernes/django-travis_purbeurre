@@ -1,0 +1,24 @@
+language: python
+python:
+  - '3.7'
+
+before_install:
+  - export PYTHONPATH=$PYTHONPATH:$PWD
+
+before_script:
+  - pip install -r requirements.txt
+  - pwd
+  - ls -la purbeurre
+
+# safelist
+branches:
+  only:
+    - master
+
+env: DJANGO_SETTINGS_MODULE="purbeurre.purbeurre.settings"
+
+services:
+  - postgresql
+
+script:
+  - pytest
