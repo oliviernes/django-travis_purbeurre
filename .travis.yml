@@ -20,4 +20,4 @@ services:
   - postgresql
 
 script:
-  - pytest
+  - pytest purbeurre/
