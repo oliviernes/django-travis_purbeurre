@@ -14,7 +14,7 @@ branches:
   only:
     - master
 
-env: DJANGO_SETTINGS_MODULE="purbeurre.purbeurre.settings"
+env: DJANGO_SETTINGS_MODULE="purbeurre.settings"
 
 services:
   - postgresql
